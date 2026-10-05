@@ -9,6 +9,26 @@ int main(int argc, char **argv)
 	return EXIT_SUCCESS;
 }
 
+#define LSH_RL_BUFSIZE 1024
+
+char *shell_read_line(void){
+	int bufsize = SHELL_RL_BUFSIZE;
+	int position = 0;
+	char *buffer = malloc(sizeof(char) * bufsize);
+	int c;
+
+	if (!buffer){
+	fprintf(stderr, "shell allocation error\n");
+	exit(EXIT_FAILURE);
+	} 
+
+	while(true){
+
+		//loop for reading line
+
+	}
+}
+
 void shell_loop(void){
 	char *line;
 	char **args;
