@@ -23,9 +23,12 @@ char *shell_read_line(void){
 	} 
 
 	while(true){
+		c = getchar();
 
+		if(c== EOF || c == '\n'){
+			buffer[position] = '\0';
+		}
 		//loop for reading line
-
 	}
 }
 
